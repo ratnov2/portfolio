@@ -1,10 +1,4 @@
 .layout {
-	@apply flex flex-wrap;
-
-	> main {
-		@apply bg-light-gray w-4/5 py-8 px-10;
-
-		> .content {
-		}
-	}
+	
+	@apply p-32 pt-0 m-auto;
 }

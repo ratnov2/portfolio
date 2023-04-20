@@ -1,0 +1,30 @@
+.single {
+	@apply relative w-full rounded-[2rem] border-2 border-dark bg-light p-5;
+	.share {
+		@apply absolute left-0 -top-[1px] -right-3 -z-10 h-[102.5%] w-[102%] rounded-[2.5rem] bg-dark;
+	}
+	.img {
+		@apply inline-block w-full overflow-hidden cursor-pointer;
+		img {
+			@apply max-h-[500px] max-h-[300px] w-full object-cover transition-all delay-100 ease-linear hover:scale-105;
+		}
+	}
+	.content {
+		@apply flex flex-col justify-center;
+		h4 {
+			@apply text-xl font-medium text-primary;
+		}
+		h3 {
+			@apply my-1 text-3xl font-bold hover:underline;
+		}
+		.links {
+			@apply mt-5 flex justify-between items-center;
+			a{
+				@apply underline text-lg;
+			}
+			svg {
+				@apply w-8;
+			}
+		}
+	}
+}

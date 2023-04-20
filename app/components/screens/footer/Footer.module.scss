@@ -1,0 +1,6 @@
+.footer {
+	@apply border-t-2;
+	.content {
+		@apply m-auto flex  justify-between py-10 px-32;
+	}
+}

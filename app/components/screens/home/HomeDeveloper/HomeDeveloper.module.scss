@@ -1,0 +1,34 @@
+.HomeDeveloper {
+	@apply flex justify-center min-h-screen;
+	.img {
+		@apply w-[50%] flex flex-col justify-center;
+        img{
+            @apply w-full;
+        }
+	}
+	.info {
+		@apply flex w-[50%] flex-col justify-center;
+		h1 {
+			@apply text-6xl font-bold;
+		}
+		p {
+			@apply my-4 text-base font-medium;
+		}
+		.contacts {
+            @apply flex items-center;
+            a{
+                @apply ml-5
+            }
+			button {
+				@apply flex rounded-md border-[1px] bg-dark px-5 py-2 text-light;
+				svg {
+					@apply w-6 ml-1;
+				}
+                &:hover{
+                    @apply bg-light text-dark;
+                }
+			}
+
+		}
+	}
+}
