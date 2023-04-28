@@ -1,12 +1,12 @@
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Image from 'next/image'
-import { HTMLAttributes, LegacyRef, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 import Layout from '@/layout/Layout'
 
 import AnimatedText from '@/ui/animated-text/AnimatedText'
 
-import profileImg from '@/assets/images/developer-pic-1.png'
+import profileImg from '@/assets/images/author_2.png'
 
 import style from './About.module.scss'
 import Skills from './skills/Skills'

@@ -3,7 +3,6 @@ import { FC } from 'react'
 
 import { GithubIcon } from '@/ui/icons/Icons'
 
-import img from '@/assets/images/developer-pic-1.png'
 
 import { IProject } from '../project.interface'
 
@@ -21,7 +20,7 @@ const SecondProject: FC<IProject> = ({
 		<div className={style.single}>
 			<div className={style.share}/>
 			<div className={style.img}>
-				<Image src={img} alt='project' width={580} height={580} />
+				<Image src={imgSrc} alt='project' width={580} height={580} />
 			</div>
 			
 			<div className={style.content}>

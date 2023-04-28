@@ -21,6 +21,10 @@
       .share{
         @apply bg-dark absolute top-0 -right-3 w-[102%] h-[103%] -z-10 rounded-2xl;
       }
+      img{
+        @apply h-full object-cover rounded-xl;
+        
+      }
      
     }
     ul{

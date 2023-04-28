@@ -4,7 +4,7 @@
 		@apply absolute left-0 -top-[1px] -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] bg-dark;
 	}
 	.img {
-		@apply inline-block w-1/2 overflow-hidden ;
+		@apply inline-block w-1/2 overflow-hidden mr-5 rounded-2xl;
 		img {
 			@apply max-h-[500px] w-full object-cover cursor-pointer transition-all delay-100 ease-linear hover:scale-105;
 		}
