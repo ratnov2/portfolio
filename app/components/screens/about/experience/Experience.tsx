@@ -13,10 +13,10 @@ const Experience = () => {
 
 	return (
 		<div className='mt-64'>
-			<h1 className='text-center'>Experience</h1>
+			<h1 className='text-center dark:text-light'>Experience</h1>
 			<div ref={ref} className='w-[75%] relative mx-auto mt-24'>
 				<motion.div
-					className='absolute left-9 top-1 w-[4px] h-full bg-dark origin-top'
+					className='absolute left-9 top-1 w-[4px] h-full bg-dark origin-top dark:bg-light' 
 					style={{ scaleY: scrollYProgress }}
 				/>
 				<div className='ml-4'>

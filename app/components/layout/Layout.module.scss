@@ -1,4 +1,8 @@
 .layout {
+	@apply p-32 pt-0 m-auto ;
+
+	.content{
+		@apply dark:bg-dark;
+	}
 	
-	@apply p-32 pt-0 m-auto;
 }

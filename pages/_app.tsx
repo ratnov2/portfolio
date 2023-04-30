@@ -12,7 +12,9 @@ const montserrat = {
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
-		<div className={`${montserrat.variable} font-mont`}>
+		<div
+			className={`${montserrat.variable} font-mont dark:bg-dark z-0 relative`}
+		>
 			<Component {...pageProps} className='' />
 			<Footer />
 		</div>

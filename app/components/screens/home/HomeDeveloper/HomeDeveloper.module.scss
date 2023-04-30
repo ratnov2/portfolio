@@ -1,10 +1,10 @@
 .HomeDeveloper {
-	@apply flex justify-center min-h-screen;
+	@apply flex min-h-screen justify-center;
 	.img {
-		@apply w-[50%] flex flex-col justify-center;
-        img{
-            @apply w-full;
-        }
+		@apply flex w-[50%] flex-col justify-center;
+		img {
+			@apply w-full;
+		}
 	}
 	.info {
 		@apply flex w-[50%] flex-col justify-center;
@@ -15,20 +15,16 @@
 			@apply my-4 text-base font-medium;
 		}
 		.contacts {
-            @apply flex items-center;
-            a{
-                @apply ml-5
-            }
-			button {
-				@apply flex rounded-md border-[1px] bg-dark px-5 py-2 text-light;
-				svg {
-					@apply w-6 ml-1;
-				}
-                &:hover{
-                    @apply bg-light text-dark;
-                }
+			@apply flex items-center;
+			a {
+				@apply ml-5;
 			}
-
+			button {
+				@apply flex rounded-md  px-7 py-3;
+				svg {
+					@apply ml-1 w-6;
+				}
+			}
 		}
 	}
 }

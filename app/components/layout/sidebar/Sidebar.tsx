@@ -6,10 +6,14 @@ import {
 	DribbbleIcon,
 	GithubIcon,
 	LinkedInIcon,
+	MoonIcon,
 	PinterestIcon,
+	SunIcon,
 	TwitterIcon
 } from '@/ui/icons/Icons'
 import Logo from '@/ui/logo/Logo'
+
+import useThemeSwitcher from '@/hooks/useThemeSwitcher'
 
 import styles from './Sidebar.module.scss'
 import { SidebarDataLink } from './sidebar.data'
@@ -18,17 +22,19 @@ const CustomLink = ({ title, link, className }: any) => {
 	return (
 		<Link href={link} className={`${className} relative group`}>
 			{title}
-			<span className='w-0 h-[1px] bg-dark inline-block absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] easy duration-300'></span>
+			<span className='w-0 h-[1px] bg-dark inline-block absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] easy duration-300 dark:bg-light'></span>
 		</Link>
 	)
 }
 
 const Sidebar: FC = () => {
+	const { mode, setMode } = useThemeSwitcher()
+
 	return (
 		<aside className={styles.sidebar}>
 			<ul>
 				{SidebarDataLink.map(({ link, title, key }: any) => (
-					<li>
+					<li className='dark:text-light'>
 						<CustomLink
 							title={title}
 							link={link}
@@ -76,6 +82,20 @@ const Sidebar: FC = () => {
 				>
 					<DribbbleIcon />
 				</motion.a>
+				<button
+					onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+					className={`ml-3 flex items-center justify-center rounded-full p-1 w-10 ${
+						mode === 'light'
+							? 'bg-dark text-light'
+							: 'bg-light text-dark'
+					}`}
+				>
+					{mode === 'dark' ? (
+						<SunIcon className='fill-dark' />
+					) : (
+						<MoonIcon className='fill-dark' />
+					)}
+				</button>
 			</ul>
 		</aside>
 	)

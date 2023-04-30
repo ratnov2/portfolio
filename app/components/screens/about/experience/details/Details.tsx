@@ -36,7 +36,7 @@ const Details: FC = () => {
 									initial={{ y: 50 }}
 									whileInView={{ y: 0 }}
 									transition={{
-										duration: 0.5,
+										duration: 1,
 										type: 'spring'
 									}}
 								>
@@ -45,13 +45,13 @@ const Details: FC = () => {
 											{position}&nbsp;
 										</span>
 										<Link
-											className='text-2xl font-bold text-primary'
+											className='text-2xl font-bold text-primary dark:text-primaryDark'
 											href={companyLink}
 										>
 											@{company}
 										</Link>
 									</h2>
-									<h4 className='text-dark/75'>
+									<h4 className='text-dark/75 dark:text-light/50'>
 										{time} | {address}
 									</h4>
 									<p className='leading-[25px]'>{work}</p>

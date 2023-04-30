@@ -13,7 +13,7 @@ const Project = () => {
 				<div className='mt-10'>
 					<AnimatedText
 						text='Imagination Trumps Knowledge!'
-						className='!leading-[115px] text-8xl font-bold'
+						className='!leading-[125px] text-8xl font-bold text-center mb-10'
 					/>
 					<div className='grid grid-cols-12 gap-24'>
 						{ProjectData.map((project, key) => {

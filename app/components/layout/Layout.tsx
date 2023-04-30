@@ -11,10 +11,10 @@ const Layout: FC<PropsWithChildren<ILayout>> = ({ children, ...rest }) => {
 	return (
 		<>
 			<Meta {...rest} />
-			<div className={styles.layout}>
+			<div className={`${styles.layout} `} >
 				<Sidebar />
 				<main>
-					<section className={styles.content}>{children}</section>
+					<section className={`${styles.content}`}>{children}</section>
 				</main>
 			</div>
 		</>

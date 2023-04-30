@@ -33,9 +33,9 @@ interface IAnimatedText {
 
 const AnimatedText: FC<IAnimatedText> = ({ text, className }) => {
 	return (
-		<div className='w-full flex text-center capitalize overflow-hidden mx-auto pb-4 justify-center '>
+		<div className='w-full flex text-left capitalize overflow-hidden mx-auto pb-4 justify-center '>
 			<motion.h1
-				className={`inline-block w-full leading-[65px] ${className}`}
+				className={`inline-block w-full leading-[65px] dark:text-light ${className}`}
 				variants={quote}
 				initial='initial'
 				animate='animate'

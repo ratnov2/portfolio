@@ -2,10 +2,5 @@
 	@apply m-auto flex justify-between h-20 items-center;
 	ul {
 		@apply flex h-14 items-center;
-		&:last-child {
-			li{
-				color:red
-			}
-		}
 	}
 }

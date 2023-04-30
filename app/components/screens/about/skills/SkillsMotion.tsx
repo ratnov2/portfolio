@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion'
-
-import style from './Skill.module.scss'
 import { SkillsData } from './skills.data'
 
 type SkillsMotion = {
@@ -12,7 +10,9 @@ const SkillsMotion = () => {
 	return (
 		<>
 			{SkillsData.map(({ title, className,x,y }) => (
-				<motion.div className={`flex items-center justify-center rounded-3xl bg-dark py-3 px-5 text-light cursor-pointer absolute  ${className}`}
+				<motion.div className={`flex items-center justify-center rounded-3xl bg-dark py-3 px-5 text-light cursor-pointer absolute  ${className}
+				dark:bg-light dark:text-dark 
+				`}
         whileHover={{scale:1.06}}
         initial={{x:0,y:0}}
         whileInView={{x,y}}

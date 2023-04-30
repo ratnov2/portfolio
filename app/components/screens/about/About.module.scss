@@ -7,23 +7,15 @@
     @apply flex;
     .info{
       @apply w-3/5;
-      h2{
-        @apply uppercase font-medium text-xl mb-6 text-dark/75;
-      }
       p{
         @apply mb-4 leading-[23px] text-base;
       }
       
     }
     .profile{
-      @apply p-4 border-2 border-dark rounded-xl relative w-1/3 bg-light mx-10;
-      
-      .share{
-        @apply bg-dark absolute top-0 -right-3 w-[102%] h-[103%] -z-10 rounded-2xl;
-      }
+      @apply p-4 border-2  rounded-xl relative w-1/3 mx-10;
       img{
         @apply h-full object-cover rounded-xl;
-        
       }
      
     }

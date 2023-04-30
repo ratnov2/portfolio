@@ -11,6 +11,7 @@ const constants = {
 
 module.exports = {
 	content: ['./pages/**/*.{js,ts,jsx,tsx}', './app/**/*.{js,ts,jsx,tsx}'],
+	darkMode: 'class',
 	theme: {
 		colors: {
 			transparent: colors.transparent,
@@ -36,11 +37,14 @@ module.exports = {
 			fontFamily: {
 				mont: ['var(--font-mont)', ...fontFamily.sans]
 			},
-			animation:{
-				'spin-slow':'spin 8s linear infinite'
+			animation: {
+				'spin-slow': 'spin 8s linear infinite'
 			},
-			backgroundImage:{
-				circularLight:'repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 100px)'
+			backgroundImage: {
+				circularLight:
+					'repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 100px)',
+				circularDark:
+					'repeating-radial-gradient(rgba(255,255,255,0.4) 2px, #1b1b1b 5px, #1b1b1b 100px)'
 			}
 		}
 	},

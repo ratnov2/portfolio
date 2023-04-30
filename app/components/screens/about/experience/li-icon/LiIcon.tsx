@@ -9,7 +9,7 @@ const LiIcon: FC<ILiIcon> = ({ reference: ref }) => {
 	console.log(scrollYProgress)
 
 	return (
-		<figure className='absolute left-0 stroke-dark'>
+		<figure className='absolute left-0 stroke-dark dark:stroke-light'>
 			<svg
 				width='75'
 				height='75'
@@ -20,13 +20,13 @@ const LiIcon: FC<ILiIcon> = ({ reference: ref }) => {
 					cx='75'
 					cy='50'
 					r='20'
-					className='stroke-primary stroke-1 fill-none'
+					className='stroke-primary stroke-1 dark:stroke-primaryDark fill-none '
 				/>
 				<motion.circle
 					cx='75'
 					cy='50'
 					r='20'
-					className='stroke-[5px] fill-light '
+					className='stroke-[5px] fill-light dark:fill-dark'
 					style={{
 						pathLength: scrollYProgress
 					}}
@@ -35,7 +35,7 @@ const LiIcon: FC<ILiIcon> = ({ reference: ref }) => {
 					cx='75'
 					cy='50'
 					r='10'
-					className='stroke-1 fill-primary animate-pulse'
+					className='stroke-1 fill-primary animate-pulse dark:fill-primaryDark'
 				/>
 			</svg>
 		</figure>

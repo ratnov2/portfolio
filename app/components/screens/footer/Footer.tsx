@@ -4,7 +4,7 @@ import style from './Footer.module.scss'
 
 const Footer = () => {
 	return (
-		<div className={style.footer}>
+		<div className={`${style.footer} dark:bg-dark dark:border-t-light dark:text-light`}>
       <div className={style.content}>
 			<span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
 			<div>

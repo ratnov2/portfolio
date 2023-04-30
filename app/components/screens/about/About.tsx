@@ -9,9 +9,9 @@ import AnimatedText from '@/ui/animated-text/AnimatedText'
 import profileImg from '@/assets/images/author_2.png'
 
 import style from './About.module.scss'
-import Skills from './skills/Skills'
-import Experience from './experience/Experience'
 import Education from './education/Education'
+import Experience from './experience/Experience'
+import Skills from './skills/Skills'
 
 type spanRef = HTMLSpanElement & Element
 type spanValue = {
@@ -41,14 +41,16 @@ const AnimatedNumber = ({ value }: spanValue) => {
 const About = () => {
 	return (
 		<Layout title='about'>
-			<div className={style.about}>
+			<div className={`${style.about} dark:text-light`}>
 				<h1>
 					<AnimatedText text='Passion Fuels Purpose!' />
 				</h1>
 				<div className={style.content}>
 					<div className={style.info}>
-						<h2>Biography</h2>
-						<p>
+						<h2 className='uppercase font-medium text-lg mb-6 text-dark/75 dark:text-light/75'>
+							Biography
+						</h2>
+						<p className='dark:text-light'>
 							Hi, I'm <b>CodeBucks</b>, a web developer and UI/UX
 							designer with a passion for creating beautiful,
 							functional, and user-centered digital experiences.
@@ -56,12 +58,12 @@ const About = () => {
 							looking for new and innovative ways to bring my
 							clients' visions to life.
 						</p>
-						<p>
+						<p className='dark:text-light'>
 							I believe that design is about more than just making
 							things look pretty – it's about solving problems and
 							creating intuitive, enjoyable experiences for users.
 						</p>
-						<p>
+						<p className='dark:text-light'>
 							Whether I'm working on a website, mobile app, or
 							other digital product, I bring my commitment to
 							design excellence and user-centered thinking to
@@ -70,9 +72,18 @@ const About = () => {
 							next project.
 						</p>
 					</div>
-					<div className={style.profile}>
-						<div className={style.share} />
-						<Image src={profileImg} alt='profile' />
+					<div
+						className={`${style.profile} bg-light dark:bg-dark dark:border-light`}
+					>
+						<div className='bg-dark absolute top-0 -right-3 w-[102%] h-[103%] rounded-2xl dark:bg-light -z-10' />
+						<Image
+							src={profileImg}
+							alt='profile'
+							priority
+							sizes='(max-width:768px) 100vw,
+						(max-width:1200px) 50vw,
+						33vw'
+						/>
 					</div>
 					<ul>
 						<li>
@@ -95,9 +106,9 @@ const About = () => {
 						</li>
 					</ul>
 				</div>
-        <Skills />
-        <Experience />
-        <Education />
+				<Skills />
+				<Experience />
+				<Education />
 			</div>
 		</Layout>
 	)
