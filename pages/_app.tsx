@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
 		<div
 			className={`${montserrat.variable} font-mont dark:bg-dark z-0 relative`}
 		>
-			<AnimatePresence mode='wait'>
+			<AnimatePresence mode='popLayout'>
 			
 				<Component key={router.asPath} {...pageProps} className='' />
 
