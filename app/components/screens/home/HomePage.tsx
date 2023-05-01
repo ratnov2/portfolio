@@ -8,7 +8,6 @@ const HomePage: FC = () => {
 	return (
 		<Layout title='Home'>
 			<HomeDeveloper />
-			
 		</Layout>
 
 	)

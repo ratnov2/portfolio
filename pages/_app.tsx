@@ -6,6 +6,7 @@ import '@/assets/styles/globals.scss'
 
 import Footer from '@/screens/footer/Footer'
 import { useRouter } from 'next/router'
+import TransitionEffect from '@/hooks/transitionEffect'
 
 const montserrat = {
 	subsets: ['latin'],
@@ -18,9 +19,11 @@ export default function App({ Component, pageProps }: AppProps) {
 		<div
 			className={`${montserrat.variable} font-mont dark:bg-dark z-0 relative`}
 		>
-			{/* <AnimatePresence mode='wait'> */}
+			<AnimatePresence mode='wait'>
+			
 				<Component key={router.asPath} {...pageProps} className='' />
-			{/* </AnimatePresence> */}
+
+			</AnimatePresence>
 			<Footer />
 		</div>
 	)
