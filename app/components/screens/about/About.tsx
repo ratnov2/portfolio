@@ -43,7 +43,7 @@ const About = () => {
 		<Layout title='about'>
 			<div className={`${style.about} dark:text-light`}>
 				<h1>
-					<AnimatedText text='Passion Fuels Purpose!' />
+					<AnimatedText text='Passion Fuels Purpose!'  className='text-8xl leading-[90px] font-bold text-dark mb-8 pt-10 text-center lg:!text-7xl lg:pt-5 sm:!mt-0 sm:leading-[70px] sm:!text-6xl xs:!text-4xl xs:leading-[40px] sm:mb-8 xl:text-6xl'/>
 				</h1>
 				<div className={style.content}>
 					<div className={style.info}>
@@ -73,9 +73,9 @@ const About = () => {
 						</p>
 					</div>
 					<div
-						className={`${style.profile} bg-light dark:bg-dark dark:border-light`}
+						className={`${style.profile} bg-light col-span-3 dark:bg-dark dark:border-light xl:col-span-4 md:col-span-8 md:order-1`}
 					>
-						<div className='bg-dark absolute top-0 -right-3 w-[102%] h-[103%] rounded-2xl dark:bg-light -z-10' />
+						<div className='bg-dark  absolute top-0 -right-3 w-[102%] h-[103%] rounded-2xl dark:bg-light -z-10' />
 						<Image
 							src={profileImg}
 							alt='profile'
@@ -87,22 +87,22 @@ const About = () => {
 					</div>
 					<ul>
 						<li>
-							<span>
+							<span >
 								<AnimatedNumber value={40} />+
 							</span>
-							<h2>Satisfied Clients</h2>
+							<h2 className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75  xl:text-center md:text-lg sm:text-base xs:text-sm'>Satisfied Clients</h2>
 						</li>
 						<li>
-							<span>
+							<span >
 								<AnimatedNumber value={50} />+
 							</span>
-							<h2>Projects Completed</h2>
+							<h2 className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75  xl:text-center md:text-lg sm:text-base xs:text-sm'>Projects Completed</h2>
 						</li>
 						<li>
-							<span>
+							<span >
 								<AnimatedNumber value={4} />+
 							</span>
-							<h2>Years Of Experience</h2>
+							<h2 className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75  xl:text-center md:text-lg sm:text-base xs:text-sm'>Years Of Experience</h2>
 						</li>
 					</ul>
 				</div>

@@ -1,33 +1,29 @@
 .about{
-  @apply min-h-screen mt-20;
-  h1{
-    @apply text-8xl leading-[90px] font-bold text-dark mb-8;
-  }
+  @apply min-h-screen ;
+
   .content{
-    @apply flex;
+    @apply grid w-full grid-cols-8 gap-16 sm:gap-8;
     .info{
-      @apply w-3/5;
+      @apply col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2  md:col-span-8;
       p{
         @apply mb-4 leading-[23px] text-base;
       }
       
     }
     .profile{
-      @apply p-4 border-2  rounded-xl relative w-1/3 mx-10;
+      @apply p-4 border-2  rounded-xl relative;
       img{
         @apply h-full object-cover rounded-xl;
       }
      
     }
     ul{
-      @apply flex flex-col justify-between w-1/3 text-right;
+      @apply flex flex-col justify-between text-right col-span-2 xl:col-span-8 xl:flex-row  xl:items-center md:order-3;
       li{
         span{
-          @apply text-7xl font-bold leading-[60px] ;
+          @apply text-7xl font-bold leading-[60px] inline-block md:text-6xl sm:text-5xl xs:text-4xl;
         }
-        h2{
-          @apply text-dark/75 font-medium text-xl;
-        }
+       
       }
     }
   }

@@ -1,12 +1,12 @@
 .single {
 	.img {
-		@apply inline-block w-1/2 overflow-hidden mr-5 rounded-2xl;
+		@apply inline-block w-1/2 overflow-hidden mr-5 rounded-2xl lg:w-full;
 		img {
-			@apply max-h-[500px] w-full object-cover cursor-pointer transition-all delay-100 ease-linear hover:scale-105;
+			@apply max-h-[500px] w-full h-full object-cover cursor-pointer transition-all delay-100 ease-linear hover:scale-105 ;
 		}
 	}
 	.content {
-		@apply flex w-1/2 flex-col justify-center;
+		@apply flex w-1/2 flex-col justify-center lg:w-full lg:pl-0 lg:pt-6;
 		.links {
 			@apply mt-5 flex;
 			svg {

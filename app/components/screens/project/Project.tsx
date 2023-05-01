@@ -10,12 +10,12 @@ const Project = () => {
 	return (
 		<Layout title='Projects'>
 			<div>
-				<div className='mt-10'>
+				<div className='mt-10 mb-20'>
 					<AnimatedText
 						text='Imagination Trumps Knowledge!'
 						className='!leading-[125px] text-8xl font-bold text-center mb-10'
 					/>
-					<div className='grid grid-cols-12 gap-24'>
+					<div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
 						{ProjectData.map((project, key) => {
 							if ((key + 1) % 3 === 1) {
 								return (
@@ -25,7 +25,7 @@ const Project = () => {
 								)
 							} else {
 								return (
-									<div className='col-span-6'>
+									<div className='col-span-6 sm:col-span-12'>
 										<SecondProject {...project} />
 									</div>
 								)

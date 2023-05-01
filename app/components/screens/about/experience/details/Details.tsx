@@ -18,7 +18,7 @@ interface Details {
 const Details: FC = () => {
 	return (
 		<>
-			<ul className='w-[60%] mx-auto'>
+			<ul className='w-[60%] xs:ml-2 !mx-auto md:w-[80%]'>
 				{DetailsData.map(
 					({
 						position,
@@ -30,7 +30,7 @@ const Details: FC = () => {
 					}) => {
 						const ref = useRef(null)
 						return (
-							<li ref={ref} className='mb-6 last:mb-0'>
+							<li ref={ref} className='mb-6 last:mb-0 '>
 								<LiIcon reference={ref} />
 								<motion.div
 									initial={{ y: 50 }}
@@ -41,20 +41,20 @@ const Details: FC = () => {
 									}}
 								>
 									<h2>
-										<span className='text-2xl font-bold'>
+										<span className='text-2xl font-bold sm:text-xl xs:text-lg'>
 											{position}&nbsp;
 										</span>
 										<Link
-											className='text-2xl font-bold text-primary dark:text-primaryDark'
+											className='text-2xl font-bold text-primary dark:text-primaryDark sm:text-xl xs:text-lg'
 											href={companyLink}
 										>
 											@{company}
 										</Link>
 									</h2>
-									<h4 className='text-dark/75 dark:text-light/50'>
+									<h4 className='text-dark/75 dark:text-light/50 xs:text-sm'>
 										{time} | {address}
 									</h4>
-									<p className='leading-[25px]'>{work}</p>
+									<p className='leading-[25px] md:text-sm md:leading-[18px]'>{work}</p>
 								</motion.div>
 							</li>
 						)
