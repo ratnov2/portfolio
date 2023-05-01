@@ -40,7 +40,7 @@ const AnimatedNumber = ({ value }: spanValue) => {
 
 const About = () => {
 	return (
-		<Layout title='about'>
+		<Layout title='about' description='about me'>
 			<div className={`${style.about} dark:text-light`}>
 				<h1>
 					<AnimatedText text='Passion Fuels Purpose!'  className='text-8xl leading-[90px] font-bold text-dark mb-8 pt-10 text-center lg:!text-7xl lg:pt-5 sm:!mt-0 sm:leading-[70px] sm:!text-6xl xs:!text-4xl xs:leading-[40px] sm:mb-8 xl:text-6xl'/>

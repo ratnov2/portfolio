@@ -8,7 +8,7 @@ import SingleProject from './single-project/SingleProject'
 
 const Project = () => {
 	return (
-		<Layout title='Projects'>
+		<Layout title='Projects' description='my projects'>
 			<div>
 				<div className='mt-10 mb-20'>
 					<AnimatedText

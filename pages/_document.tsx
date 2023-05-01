@@ -1,8 +1,6 @@
 import { Head, Html, Main, NextScript } from 'next/document'
 import Script from 'next/script'
 
-import TransitionEffect from '@/hooks/transitionEffect'
-
 const Document = () => {
 	return (
 		<Html>

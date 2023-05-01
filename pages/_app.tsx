@@ -6,7 +6,6 @@ import '@/assets/styles/globals.scss'
 
 import Footer from '@/screens/footer/Footer'
 import { useRouter } from 'next/router'
-import TransitionEffect from '@/hooks/transitionEffect'
 
 const montserrat = {
 	subsets: ['latin'],

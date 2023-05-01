@@ -10,7 +10,7 @@ import { ISeo } from './meta.interface'
 const Meta: FC<PropsWithChildren<ISeo>> = ({
 	title,
 	description,
-	image = '/images/logo.png',
+	image = '/images/logo.ico',
 	children,
 	type = 'website'
 }) => {
@@ -21,6 +21,7 @@ const Meta: FC<PropsWithChildren<ISeo>> = ({
 		<>
 			<Head>
 				<title itemProp='headline'>{titleMerge(title)}</title>
+				<link rel="shortcut icon" href={image} />
 				{description ? (
 					<>
 						<meta

@@ -14,7 +14,6 @@ const Layout: FC<PropsWithChildren<ILayout>> = ({ children, ...rest }) => {
 		<>
 			<TransitionEffect />
 			<Meta {...rest} />
-
 			<div className={`${styles.layout} `}>
 				<Sidebar />
 				<main>
