@@ -22,9 +22,13 @@ const SingleProject: FC<IProject> = ({
 		>
 			<div className='absolute left-0 -top-[1px] -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] bg-dark dark:bg-light xs:-right-2 xs:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]' />
 			<Link href={linkProject} className={style.img}>
-				<Image src={imgSrc} alt='project' width={580} height={580} 
-				priority
-				sizes='(max-width:768px) 100vw,
+				<Image
+					src={imgSrc}
+					alt='project'
+					width={580}
+					height={580}
+					priority
+					sizes='(max-width:768px) 100vw,
 				(max-width:1200px) 50vw,
 				50vw'
 				/>
@@ -34,10 +38,12 @@ const SingleProject: FC<IProject> = ({
 				<h4 className='text-xl font-medium text-primary dark:text-primaryDark xs:text-base '>
 					{typeProject}
 				</h4>
-				<h3 className='my-1 text-4xl font-bold hover:underline dark:text-light lg:text-3xl xs:text-2xl'>
+				<Link href={linkProject} className='my-1 text-4xl font-bold hover:underline dark:text-light lg:text-3xl xs:text-2xl'>
 					{name}
-				</h3>
-				<p className='text-dark/75 dark:text-light sm:text-sm'>{text}</p>
+				</Link>
+				<p className='text-dark/75 dark:text-light sm:text-sm'>
+					{text}
+				</p>
 				<Link href={linkGit} className={style.links}>
 					<GithubIcon className='rounded-full dark:text-light' />
 					<button className='ml-5 rounded-md bg-dark px-6 py-2 text-light dark:bg-light dark:text-dark'>

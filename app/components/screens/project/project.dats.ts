@@ -5,6 +5,8 @@ import faBankImg from '@/assets/images/fa-bank.png'
 import onlineCinemaImg from '@/assets/images/online-cinema.png'
 import falconImg from '@/assets/images/falcon.png'
 import venomImg from '@/assets/images/venom.png'
+import lamodaImg from '@/assets/images/lamoda.png'
+import timerImg from '@/assets/images/timer.png'
 
 export const ProjectData = [
 	{
@@ -19,9 +21,9 @@ export const ProjectData = [
 		imgSrc: faBankImg,
 		typeProject: 'Website',
 		name: 'FA Bank',
-		linkProject: '/',
+		linkProject: 'https://fa-bank.vercel.app',
 		text: '',
-		linkGit: '/'
+		linkGit: 'https://github.com/ratnov2/FA_Bank'
 	},
   {
 		imgSrc: falconImg,
@@ -48,11 +50,19 @@ export const ProjectData = [
 		linkGit: 'https://github.com/ratnov2/Venom'
 	},
   {
-		imgSrc: img,
-		typeProject: 'Featured Project',
-		name: 'Crypto Screener Application',
-		linkProject: '/',
+		imgSrc: lamodaImg,
+		typeProject: 'Website Template',
+		name: 'Lamoda',
+		linkProject: 'https://ratnov2.github.io/LamodaTemplate/',
 		text: '',
-		linkGit: '/'
+		linkGit: 'https://github.com/ratnov2/LamodaTemplate'
+	},
+	{
+		imgSrc: timerImg,
+		typeProject: 'Website',
+		name: 'New Year Timer',
+		linkProject: 'https://new-year-timer-2.vercel.app',
+		text: '',
+		linkGit: 'https://github.com/ratnov2/new-year-timer_2'
 	},
 ]
