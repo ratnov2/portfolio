@@ -6,7 +6,9 @@ import { LinkArrow } from '@/ui/icons/Icons'
 
 import devImg from '@/assets/images/developer-pic-1.png'
 import lampImg from '@/assets/images/lamp.svg'
+
 import style from './HomeDeveloper.module.scss'
+import Link from 'next/link'
 
 const HomeDeveloper = () => {
 	return (
@@ -34,12 +36,16 @@ const HomeDeveloper = () => {
 					/>
 				</div>
 				<p className='my-4 text-base font-medium dark:text-light md:text-sm  sm:!text-xs'>
-					As a skilled full-stack developer, I am dedicated to turning
-					ideas into innovative web applications. Explore my latest
-					projects and articles, showcasing my expertise in React.js
-					and web development.
+					I am an experienced frontend programmer in web application
+					development. My professional stack includes knowledge of
+					HTML, CSS, JavaScript and frameworks such as React and Next
+					js. I strive to create modern web applications that work
+					fast, have a simple interface and easy navigation. I am also
+					an enthusiast of new technologies and am always ready to
+					learn new development tools and methods.
 				</p>
 				<div className={style.contacts}>
+					<Link href={'https://hh.ru/resume/36b585bbff0b90fc600039ed1f414870415961'}>
 					<button
 						className='border-[1px] text-light bg-dark border-dark  hover:bg-light hover:text-dark
 						dark:bg-light dark:text-dark
@@ -47,13 +53,18 @@ const HomeDeveloper = () => {
 					>
 						<span>Resume</span> <LinkArrow />
 					</button>
-					<a href='/' className='underline dark:text-light'>
+					</Link>
+					<a href='https://vk.com/id307263098' className='underline dark:text-light'>
 						Contact
 					</a>
 				</div>
 			</div>
 			<HireMe />
-			<Image src={lampImg} alt='lamp' className='absolute right-0 bottom-[10vh] w-24 md:hidden'/>
+			<Image
+				src={lampImg}
+				alt='lamp'
+				className='absolute right-0 bottom-[10vh] w-24 md:hidden'
+			/>
 		</div>
 	)
 }

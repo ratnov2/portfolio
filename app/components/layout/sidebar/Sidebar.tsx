@@ -94,7 +94,7 @@ const Sidebar: FC = () => {
 						<TwitterIcon />
 					</motion.a>
 					<motion.a
-						href={'/'}
+						href={'https://github.com/ratnov2'}
 						whileHover={{ y: -2 }}
 						className='w-6 mx-3 dark:text-light'
 					>

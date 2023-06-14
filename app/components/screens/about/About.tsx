@@ -43,7 +43,10 @@ const About = () => {
 		<Layout title='about' description='about me'>
 			<div className={`${style.about} dark:text-light`}>
 				<h1>
-					<AnimatedText text='Passion Fuels Purpose!'  className='text-8xl leading-[90px] font-bold text-dark mb-8 pt-10 text-center lg:!text-7xl lg:pt-5 sm:!mt-0 sm:leading-[70px] sm:!text-6xl xs:!text-4xl xs:leading-[40px] sm:mb-8 xl:text-6xl'/>
+					<AnimatedText
+						text='Passion Fuels Purpose!'
+						className='text-8xl leading-[90px] font-bold text-dark mb-8 pt-10 text-center lg:!text-7xl lg:pt-5 sm:!mt-0 sm:leading-[70px] sm:!text-6xl xs:!text-4xl xs:leading-[40px] sm:mb-8 xl:text-6xl'
+					/>
 				</h1>
 				<div className={style.content}>
 					<div className={style.info}>
@@ -51,25 +54,35 @@ const About = () => {
 							Biography
 						</h2>
 						<p className='dark:text-light'>
-							Hi, I'm <b>CodeBucks</b>, a web developer and UI/UX
-							designer with a passion for creating beautiful,
-							functional, and user-centered digital experiences.
-							With 4 years of experience in the field. I am always
-							looking for new and innovative ways to bring my
-							clients' visions to life.
+							I am an experienced frontend programmer with more
+							than three years of experience. I like to create
+							modern, beautiful and functional websites and
+							applications using advanced technologies.
 						</p>
 						<p className='dark:text-light'>
-							I believe that design is about more than just making
-							things look pretty – it's about solving problems and
-							creating intuitive, enjoyable experiences for users.
+							I have a wide range of skills and knowledge ranging
+							from HTML and CSS to JavaScript, React and Next js.
+							Ant Design and TailwindCSS to create responsive
+							designs for all devices.
 						</p>
 						<p className='dark:text-light'>
-							Whether I'm working on a website, mobile app, or
-							other digital product, I bring my commitment to
-							design excellence and user-centered thinking to
-							every project I work on. I look forward to the
-							opportunity to bring my skills and passion to your
-							next project.
+							I am confident in using task builders like Webpack
+							to optimize the code and speed up the development
+							process. I am also familiar with Git version control
+							systems.
+						</p>
+						<p className='dark:text-light'>
+							I strive to create web pages that are not only
+							beautiful and functional, but also optimized for
+							fast loading and ease of use. I understand the value
+							of user experience and am always focused on creating
+							websites that make customers happy and satisfied.
+						</p>
+						<p className='dark:text-light'>
+							I am independent, creative and open to new ideas and
+							technologies. I am confident in my abilities and
+							ready to solve difficult tasks together with the
+							team or on my own.
 						</p>
 					</div>
 					<div
@@ -87,22 +100,28 @@ const About = () => {
 					</div>
 					<ul>
 						<li>
-							<span >
-								<AnimatedNumber value={40} />+
+							<span>
+								<AnimatedNumber value={3} />+
 							</span>
-							<h2 className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75  xl:text-center md:text-lg sm:text-base xs:text-sm'>Satisfied Clients</h2>
+							<h2 className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75  xl:text-center md:text-lg sm:text-base xs:text-sm'>
+								Satisfied Clients
+							</h2>
 						</li>
 						<li>
-							<span >
-								<AnimatedNumber value={50} />+
+							<span>
+								<AnimatedNumber value={10} />+
 							</span>
-							<h2 className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75  xl:text-center md:text-lg sm:text-base xs:text-sm'>Projects Completed</h2>
+							<h2 className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75  xl:text-center md:text-lg sm:text-base xs:text-sm'>
+								Projects Completed
+							</h2>
 						</li>
 						<li>
-							<span >
-								<AnimatedNumber value={4} />+
+							<span>
+								<AnimatedNumber value={3} />+
 							</span>
-							<h2 className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75  xl:text-center md:text-lg sm:text-base xs:text-sm'>Years Of Experience</h2>
+							<h2 className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75  xl:text-center md:text-lg sm:text-base xs:text-sm'>
+								Years Of Experience
+							</h2>
 						</li>
 					</ul>
 				</div>
