@@ -18,6 +18,10 @@ module.exports = {
 			...constants
 		},
 		extend: {
+			aspectRatio: {
+				'16/9': '16 / 9',
+				'1:1': '1 / 1'
+			},
 			fontSize: {
 				xs: '0.82rem',
 				sm: '0.98rem',

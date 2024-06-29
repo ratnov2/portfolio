@@ -4,18 +4,18 @@ import { FC, useRef } from 'react'
 
 import LiIcon from '../li-icon/LiIcon'
 
-import { DetailsData } from './details.data'
-
-interface Details {
-	position: string
-	company: string
-	companyLink: string
-	time: string
-	address: string
-	work: string
+interface IDetails {
+	DetailsData: {
+		position: string
+		company: string
+		companyLink: string
+		time: string
+		address: string
+		work: string
+	}[]
 }
 
-const Details: FC = () => {
+const Details: FC<IDetails> = ({ DetailsData }) => {
 	return (
 		<>
 			<ul className='w-[60%] xs:ml-2 !mx-auto md:w-[80%]'>
@@ -54,7 +54,11 @@ const Details: FC = () => {
 									<h4 className='text-dark/75 dark:text-light/50 xs:text-sm'>
 										{time} | {address}
 									</h4>
-									<p className='leading-[25px] md:text-sm md:leading-[18px]'>{work}</p>
+									<p className='leading-[25px] md:text-sm md:leading-[18px]'>
+										{work.split('\n').map(line => (
+											<p>{line}</p>
+										))}
+									</p>
 								</motion.div>
 							</li>
 						)

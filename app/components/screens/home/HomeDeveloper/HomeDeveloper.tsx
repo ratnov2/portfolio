@@ -1,14 +1,15 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import AnimatedText from '@/ui/animated-text/AnimatedText'
 import HireMe from '@/ui/hire-me/HireMe'
 import { LinkArrow } from '@/ui/icons/Icons'
+import { ImgWithLoader } from '@/ui/img-with-loader/ImgWithLoader'
 
 import devImg from '@/assets/images/developer-pic-1.png'
 import lampImg from '@/assets/images/lamp.svg'
 
 import style from './HomeDeveloper.module.scss'
-import Link from 'next/link'
 
 const HomeDeveloper = () => {
 	return (
@@ -16,7 +17,12 @@ const HomeDeveloper = () => {
 			<div
 				className={`${style.img} flex flex-col justify-center w-1/2 lg:hidden md:inline-block md:w-full`}
 			>
-				<Image
+				<ImgWithLoader
+					img={devImg}
+					className='aspect-[1/1]'
+					type='preview'
+				/>
+				{/* <Image
 					alt='developer'
 					src={devImg}
 					priority
@@ -24,7 +30,7 @@ const HomeDeveloper = () => {
 				(max-width:1200px) 50vw,
 				50vw
 				'
-				/>
+				/> */}
 			</div>
 			<div
 				className={`${style.info} flex w-1/2 flex-col justify-center lg:w-full lg:text-center`}
@@ -45,16 +51,23 @@ const HomeDeveloper = () => {
 					learn new development tools and methods.
 				</p>
 				<div className={style.contacts}>
-					<Link href={'https://hh.ru/resume/36b585bbff0b90fc600039ed1f414870415961'}>
-					<button
-						className='border-[1px] text-light bg-dark border-dark  hover:bg-light hover:text-dark
+					<Link
+						href={
+							'https://hh.ru/resume/36b585bbff0b90fc600039ed1f414870415961'
+						}
+					>
+						<button
+							className='border-[1px] text-light bg-dark border-dark  hover:bg-light hover:text-dark
 						dark:bg-light dark:text-dark
 					hover:dark:bg-dark hover:dark:text-light hover:dark:border-light'
-					>
-						<span>Resume</span> <LinkArrow />
-					</button>
+						>
+							<span>Resume</span> <LinkArrow />
+						</button>
 					</Link>
-					<a href='https://vk.com/id307263098' className='underline dark:text-light'>
+					<a
+						href='https://vk.com/id307263098'
+						className='underline dark:text-light'
+					>
 						Contact
 					</a>
 				</div>

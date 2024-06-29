@@ -13,7 +13,7 @@ export const ProjectData = [
 		imgSrc: onlineCinemaImg,
 		typeProject: 'FullStack Website',
 		name: 'FA Cinema 🔥',
-		linkProject: 'https://fronted-eta.vercel.app/',
+		linkProject: 'https://fronted-ujn9-4rf4ahm21-ratnov2s-projects.vercel.app',
 		text: 'The mini cinema created on Extjs is an interactive website that provides the opportunity to watch movies and TV series. Users can easily select movies and TV shows from the catalog, view trailers, get acquainted with the rating and description of films, as well as add them to the favorites list. In addition, the site is pleasing to the eye and optimized for fast loading.',
 		linkGit: 'https://github.com/ratnov2/fronted'
 	},

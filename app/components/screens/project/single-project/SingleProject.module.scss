@@ -1,8 +1,11 @@
 .single {
 	.img {
-		@apply inline-block w-1/2 overflow-hidden mr-5 rounded-2xl lg:w-full;
+		@apply mr-5 flex w-1/2 items-center overflow-hidden rounded-2xl lg:w-full;
+		> div {
+			@apply overflow-hidden rounded-2xl;
+		}
 		img {
-			@apply max-h-[500px] w-full h-full object-cover cursor-pointer transition-all delay-100 ease-linear hover:scale-105 ;
+			@apply h-full max-h-[500px] w-full cursor-pointer object-cover transition-all delay-100 ease-linear hover:scale-105;
 		}
 	}
 	.content {

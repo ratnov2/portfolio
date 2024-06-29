@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { FC } from 'react'
 
 import { GithubIcon } from '@/ui/icons/Icons'
+import { ImgWithLoader } from '@/ui/img-with-loader/ImgWithLoader'
 
 import { IProject } from '../project.interface'
 
@@ -21,16 +22,7 @@ const SecondProject: FC<IProject> = ({
 		>
 			<div className='absolute left-0 -top-[1px] -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] bg-dark dark:bg-light' />
 			<Link href={linkProject} className={style.img}>
-				<Image
-					src={imgSrc}
-					alt='project'
-					width={580}
-					height={580}
-					priority
-					sizes='(max-width:768px) 100vw,
-				(max-width:1200px) 50vw,
-				50vw'
-				/>
+				<ImgWithLoader img={imgSrc} className='' />
 			</Link>
 
 			<div className={style.content}>

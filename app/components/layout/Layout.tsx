@@ -12,7 +12,7 @@ interface ILayout extends ISeo {}
 const Layout: FC<PropsWithChildren<ILayout>> = ({ children, ...rest }) => {
 	return (
 		<>
-			<TransitionEffect />
+			{process.env.NEXT_PUBLIC_IS_PROD === 'true' && <TransitionEffect />}
 			<Meta {...rest} />
 			<div className={`${styles.layout} `}>
 				<Sidebar />

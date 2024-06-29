@@ -101,7 +101,7 @@ const About = () => {
 					<ul>
 						<li>
 							<span>
-								<AnimatedNumber value={3} />+
+								<AnimatedNumber value={5} />+
 							</span>
 							<h2 className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75  xl:text-center md:text-lg sm:text-base xs:text-sm'>
 								Satisfied Clients
@@ -109,7 +109,7 @@ const About = () => {
 						</li>
 						<li>
 							<span>
-								<AnimatedNumber value={10} />+
+								<AnimatedNumber value={14} />+
 							</span>
 							<h2 className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75  xl:text-center md:text-lg sm:text-base xs:text-sm'>
 								Projects Completed

@@ -87,11 +87,11 @@ const Sidebar: FC = () => {
 				</ul>
 				<ul>
 					<motion.a
-						href={'/'}
+						href={'https://github.com/ratnov2'}
 						whileHover={{ y: -2 }}
-						className='w-6 mr-3'
+						className='w-6 mx-3 dark:text-light'
 					>
-						<TwitterIcon />
+						<GithubIcon />
 					</motion.a>
 					<motion.a
 						href={'https://github.com/ratnov2'}
@@ -101,25 +101,25 @@ const Sidebar: FC = () => {
 						<GithubIcon />
 					</motion.a>
 					<motion.a
-						href={'/'}
+						href={'https://github.com/ratnov2'}
 						whileHover={{ y: -2 }}
-						className='w-6 mx-3'
+						className='w-6 mx-3 dark:text-light'
 					>
-						<LinkedInIcon />
+						<GithubIcon />
 					</motion.a>
 					<motion.a
-						href={'/'}
+						href={'https://github.com/ratnov2'}
 						whileHover={{ y: -2 }}
-						className='w-6 mx-3'
+						className='w-6 mx-3 dark:text-light'
 					>
-						<PinterestIcon />
+						<GithubIcon />
 					</motion.a>
 					<motion.a
-						href={'/'}
+						href={'https://github.com/ratnov2'}
 						whileHover={{ y: -2 }}
-						className='w-6 ml-3'
+						className='w-6 mx-3 dark:text-light'
 					>
-						<DribbbleIcon />
+						<GithubIcon />
 					</motion.a>
 					<button
 						onClick={() =>
@@ -144,8 +144,8 @@ const Sidebar: FC = () => {
 					className='min-w-[70vw] flex flex-col justify between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
 			bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
 			'
-			initial={{scale:0,opacity:0,x:'-50%',y:'-50%'}}
-			animate={{scale:1,opacity:1}}
+					initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }}
+					animate={{ scale: 1, opacity: 1 }}
 				>
 					<ul className='flex items-center flex-col justify-center mb-10'>
 						{SidebarDataLink.map(({ link, title, key }: any) => (
@@ -164,9 +164,9 @@ const Sidebar: FC = () => {
 						<motion.a
 							href={'/'}
 							whileHover={{ y: -2 }}
-							className='w-6 mr-3 sm:mx-1'
+							className='w-6 mx-3 text-light dark:text-dark sm:mx-1'
 						>
-							<TwitterIcon />
+							<GithubIcon />
 						</motion.a>
 						<motion.a
 							href={'/'}
@@ -178,23 +178,23 @@ const Sidebar: FC = () => {
 						<motion.a
 							href={'/'}
 							whileHover={{ y: -2 }}
-							className='w-6 mx-3 sm:mx-1'
+							className='w-6 mx-3 text-light dark:text-dark sm:mx-1'
 						>
-							<LinkedInIcon />
+							<GithubIcon />
 						</motion.a>
 						<motion.a
 							href={'/'}
 							whileHover={{ y: -2 }}
-							className='w-6 mx-3 sm:mx-1'
+							className='w-6 mx-3 text-light dark:text-dark sm:mx-1'
 						>
-							<PinterestIcon />
+							<GithubIcon />
 						</motion.a>
 						<motion.a
 							href={'/'}
 							whileHover={{ y: -2 }}
-							className='w-6 ml-3 sm:mx-1'
+							className='w-6 mx-3 text-light dark:text-dark sm:mx-1'
 						>
-							<DribbbleIcon />
+							<GithubIcon />
 						</motion.a>
 						<button
 							onClick={() =>
