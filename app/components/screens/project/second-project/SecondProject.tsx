@@ -32,7 +32,7 @@ const SecondProject: FC<IProject> = ({
 				<h3>
 					<Link href={linkProject}>{name}</Link>
 				</h3>
-				<Link href={linkGit} className={style.links}>
+				<Link href={linkProject} className={style.links}>
 					<button className='text-dark underline dark:text-light '>
 						Visit
 					</button>

@@ -39,7 +39,7 @@ const SingleProject: FC<IProject> = ({
 				<p className='text-dark/75 dark:text-light sm:text-sm'>
 					{text}
 				</p>
-				<Link href={linkGit} className={style.links}>
+				<Link href={linkProject} className={style.links}>
 					<GithubIcon className='rounded-full dark:text-light' />
 					<button className='ml-5 rounded-md bg-dark px-6 py-2 text-light dark:bg-light dark:text-dark'>
 						Visit Project
