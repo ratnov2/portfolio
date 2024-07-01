@@ -1,4 +1,5 @@
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import { useEffect, useRef } from 'react'
 
@@ -10,10 +11,14 @@ import { ImgWithLoader } from '@/ui/img-with-loader/ImgWithLoader'
 import profileImg from '@/assets/images/author_2.png'
 
 import style from './About.module.scss'
-import Education from './education/Education'
-import Experience from './experience/Experience'
 import Skills from './skills/Skills'
 
+const Experience = dynamic(() => import('./experience/Experience'), {
+	ssr: false
+})
+const Education = dynamic(() => import('./education/Education'), {
+	ssr: false
+})
 type spanRef = HTMLSpanElement & Element
 type spanValue = {
 	value: number
