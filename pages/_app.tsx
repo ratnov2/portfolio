@@ -1,11 +1,11 @@
 import { Montserrat } from '@next/font/google'
 import { AnimatePresence } from 'framer-motion'
 import type { AppProps } from 'next/app'
+import { useRouter } from 'next/router'
 
 import '@/assets/styles/globals.scss'
 
 import Footer from '@/screens/footer/Footer'
-import { useRouter } from 'next/router'
 
 const montserrat = {
 	subsets: ['latin'],
