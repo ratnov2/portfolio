@@ -86,7 +86,7 @@ const Sidebar: FC = () => {
 						<HeadHunterIcon />
 					</motion.a>
 					<motion.a
-						href={'https://github.com/ratnov2'}
+						href={'https://career.habr.com/ratnov2'}
 						whileHover={{ y: -2 }}
 						className='w-6 mx-3 dark:text-light'
 					>
@@ -163,7 +163,7 @@ const Sidebar: FC = () => {
 							<HeadHunterIcon />
 						</motion.a>
 						<motion.a
-							href={'/'}
+							href={'https://career.habr.com/ratnov2'}
 							whileHover={{ y: -2 }}
 							className='w-6 mx-3 text-light dark:text-dark sm:mx-1'
 						>
