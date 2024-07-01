@@ -22,15 +22,6 @@ const HomeDeveloper = () => {
 					className='aspect-[1/1]'
 					type='preview'
 				/>
-				{/* <Image
-					alt='developer'
-					src={devImg}
-					priority
-					sizes='(max-width:768px) 100vw,
-				(max-width:1200px) 50vw,
-				50vw
-				'
-				/> */}
 			</div>
 			<div
 				className={`${style.info} flex w-1/2 flex-col justify-center lg:w-full lg:text-center`}
@@ -53,7 +44,7 @@ const HomeDeveloper = () => {
 				<div className={style.contacts}>
 					<Link
 						href={
-							'https://hh.ru/resume/36b585bbff0b90fc600039ed1f414870415961'
+							'https://hh.ru/resume/a453d217ff0d4b42f50039ed1f48795a304638'
 						}
 					>
 						<button

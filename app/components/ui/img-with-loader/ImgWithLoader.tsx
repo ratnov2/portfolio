@@ -8,7 +8,7 @@ import style from './style.module.scss'
 interface IImgWithLoader {
 	img?: string | StaticImageData
 	className?: string
-	type?: 'preview'
+	type?: 'preview' | 'avatar'
 }
 
 export const ImgWithLoader: FC<IImgWithLoader> = ({
@@ -18,7 +18,7 @@ export const ImgWithLoader: FC<IImgWithLoader> = ({
 }) => {
 	const [isLoading, setIsLoading] = useState(true)
 	return (
-		<div className={`aspect-[16/9] ${className} `}>
+		<div className={`${className} `}>
 			{img && (
 				<div
 					className={`${style.imageWrapper} ${
@@ -27,7 +27,7 @@ export const ImgWithLoader: FC<IImgWithLoader> = ({
 				>
 					<Image
 						src={img}
-						width={1399}
+						width={499}
 						height={499}
 						onLoadingComplete={() => setIsLoading(false)}
 						style={

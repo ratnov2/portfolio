@@ -23,7 +23,7 @@ const SingleProject: FC<IProject> = ({
 		>
 			<div className='absolute left-0 -top-[1px] -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] bg-dark dark:bg-light xs:-right-2 xs:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]' />
 			<Link href={linkProject} className={style.img} >
-				<ImgWithLoader img={imgSrc}  />
+				<ImgWithLoader img={imgSrc}  className='aspect-video'/>
 			</Link>
 
 			<div className={style.content}>

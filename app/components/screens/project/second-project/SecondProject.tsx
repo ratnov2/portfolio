@@ -22,7 +22,7 @@ const SecondProject: FC<IProject> = ({
 		>
 			<div className='absolute left-0 -top-[1px] -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] bg-dark dark:bg-light' />
 			<Link href={linkProject} className={style.img}>
-				<ImgWithLoader img={imgSrc} className='' />
+				<ImgWithLoader img={imgSrc} className='aspect-video' />
 			</Link>
 
 			<div className={style.content}>

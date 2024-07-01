@@ -3,15 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { FC, useState } from 'react'
 
-import {
-	DribbbleIcon,
-	GithubIcon,
-	LinkedInIcon,
-	MoonIcon,
-	PinterestIcon,
-	SunIcon,
-	TwitterIcon
-} from '@/ui/icons/Icons'
+import { GithubIcon, HabrIcon, HeadHunterIcon, MoonIcon, SunIcon } from '@/ui/icons/Icons'
 import Logo from '@/ui/logo/Logo'
 
 import useThemeSwitcher from '@/hooks/useThemeSwitcher'
@@ -87,18 +79,18 @@ const Sidebar: FC = () => {
 				</ul>
 				<ul>
 					<motion.a
-						href={'https://github.com/ratnov2'}
+						href={'https://hh.ru/resume/a453d217ff0d4b42f50039ed1f48795a304638'}
 						whileHover={{ y: -2 }}
 						className='w-6 mx-3 dark:text-light'
 					>
-						<GithubIcon />
+						<HeadHunterIcon />
 					</motion.a>
 					<motion.a
 						href={'https://github.com/ratnov2'}
 						whileHover={{ y: -2 }}
 						className='w-6 mx-3 dark:text-light'
 					>
-						<GithubIcon />
+						<HabrIcon />
 					</motion.a>
 					<motion.a
 						href={'https://github.com/ratnov2'}
@@ -162,18 +154,20 @@ const Sidebar: FC = () => {
 					</ul>
 					<ul className='mx-10 flex-wrap justify-center'>
 						<motion.a
-							href={'/'}
+							href={
+								'https://hh.ru/resume/a453d217ff0d4b42f50039ed1f48795a304638'
+							}
 							whileHover={{ y: -2 }}
 							className='w-6 mx-3 text-light dark:text-dark sm:mx-1'
 						>
-							<GithubIcon />
+							<HeadHunterIcon />
 						</motion.a>
 						<motion.a
 							href={'/'}
 							whileHover={{ y: -2 }}
 							className='w-6 mx-3 text-light dark:text-dark sm:mx-1'
 						>
-							<GithubIcon />
+							<HabrIcon />
 						</motion.a>
 						<motion.a
 							href={'/'}

@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react'
 import Layout from '@/layout/Layout'
 
 import AnimatedText from '@/ui/animated-text/AnimatedText'
+import { ImgWithLoader } from '@/ui/img-with-loader/ImgWithLoader'
 
 import profileImg from '@/assets/images/author_2.png'
 
@@ -89,13 +90,10 @@ const About = () => {
 						className={`${style.profile} bg-light col-span-3 dark:bg-dark dark:border-light xl:col-span-4 md:col-span-8 md:order-1`}
 					>
 						<div className='bg-dark  absolute top-0 -right-3 w-[102%] h-[103%] rounded-2xl dark:bg-light -z-10' />
-						<Image
-							src={profileImg}
-							alt='profile'
-							priority
-							sizes='(max-width:768px) 100vw,
-						(max-width:1200px) 50vw,
-						33vw'
+						<ImgWithLoader
+							img={profileImg}
+							type='avatar'
+							className=' h-full'
 						/>
 					</div>
 					<ul>
